@@ -36,7 +36,11 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-  background: #dfd2ec;
+  background-image: linear-gradient(
+    45deg,
+    #edd9ff,
+    #fff
+  );
   border-radius: 32px;
   padding-left: 20px;
   margin-bottom: 25px;
@@ -95,4 +99,21 @@ ul li.checked{
 
 ul li.checked::before{
   background-image: url(img/373338613_2665569506934371_3433588657218141967_n.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #ff9f8b;
 }
